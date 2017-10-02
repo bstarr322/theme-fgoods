@@ -1,0 +1,145 @@
+.loop-wrapper {
+  display: block;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto 40px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 3px solid #fff;
+  color: #fff;
+
+  h2 {
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    span {
+      letter-spacing: 1px;
+      font-weight: 300;
+    }
+  }
+
+  h3 {
+    margin: 1px auto 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    span {
+      letter-spacing: 1px;
+      font-weight: 300;
+    }
+  }
+
+  .sun {
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin-right: -25px;
+    position: absolute;
+    right: 20%;
+    top: 65px;
+    background: url("{{ 'looper-sun.svg' | asset_url }}") no-repeat scroll 0 0 / contain;
+    border-radius: 50%;
+  }
+
+  .mountain {
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    right: -900px;
+    transform: rotate(130deg);
+    animation: mtn 20s linear infinite;
+    bottom: -20px;
+    box-shadow: 0 0 0 50px #fff, 60px 50px 0 70px #fff, 90px 90px 0 50px #fff, 250px 250px 0 50px #fff, 290px 320px 0 50px #fff, 320px 400px 0 50px #fff;
+  }
+
+  .hill {
+    width: 400px;
+    height: 20px;
+    position: absolute;
+    right: -650px;
+    bottom: -50px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 50px #70b448, -20px 0 0 20px #70b448, -90px 0 0 50px #70b448, 250px 0 0 50px #70b448, 290px 0 0 50px #70b448, 620px 0 0 50px #70b448;
+    animation: hill 4s 2s linear infinite;
+  }
+
+  .tree,
+  .tree:nth-child(2),
+  .tree:nth-child(3) {
+    width: 35px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0) url("{{ 'looper-tree.svg' | asset_url }}") no-repeat scroll 0 0;
+  }
+
+  .rock {
+    width: 3%;
+    height: 2%;
+    margin-left: -150px;
+    position: absolute;
+    bottom: -2px;
+    background: #333 none repeat scroll 0 0;
+    border-radius: 20px;
+    animation: rock 4s -0.530s linear infinite;
+  }
+
+  .truck,
+  .wheels {
+    width: 85px;
+    margin-right: -35px;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0s ease 0s;
+    background: #eee none repeat scroll 0 0;
+  }
+
+  .truck {
+    height: 60px;
+    background: rgba(0, 0, 0, 0) url("{{ 'looper-truck.svg' | asset_url }}") no-repeat scroll 0 0;
+    animation: truck 4s 0.080s ease infinite;
+    &:before {
+      content: " ";
+      width: 25px;
+      position: absolute;
+      box-shadow: -30px 28px 0 1.5px #fff, -35px 18px 0 1.5px #fff;
+      animation: wind 1.5s 0.000s ease infinite;
+    }
+  }
+
+  .wheels {
+    height: 15px;
+    margin-bottom: 0;
+    background: rgba(0, 0, 0, 0) url("{{ 'looper-wheels.svg' | asset_url }}") no-repeat scroll 0 0;
+    animation: truck 4s 0.001s ease infinite;
+  }
+
+  .tree  {
+    animation: tree 3s 0.000s linear infinite;
+    &:nth-child(2) {
+      animation: tree2 2s 0.150s linear infinite;
+    }
+    &:nth-child(3) {
+      animation: tree3 8s 0.050s linear infinite;
+    }
+  }
+
+  @media only screen and (min-width: 750px) {
+    width: 750px;
+    height: 220px;
+    h2 {
+      font-size: 38px;
+    }
+    h3 {
+      font-size: 21px;
+    }
+    .truck,
+    .wheels {
+      margin-right: -60px;
+    }
+  }
+}

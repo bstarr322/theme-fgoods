@@ -10097,6 +10097,8 @@ footer.fill-bg {
   border-top: 1px solid {{ settings.color_line }};
   padding: 1.75em 0;
   margin: 0;
+  display: flex;
+  align-items: center;
 }
 .footer-copyright .row > [class*="col-"] {
   padding: 0;
@@ -10110,14 +10112,28 @@ footer.fill-bg {
 }
 .footer-copyright a span {
   font-weight: bold;
-  color: {{ settings.color_text }};
+  color: {{ settings.color_footerlinks }};
   text-transform: uppercase;
 }
+
+.footer-copyright .payment {
+  margin: 0 5px 5px 5px;
+  width: 48px;
+  height: 36px;
+}
+
+
 @media (max-width: 767px) {
   .footer-copyright .row {
     border-top: 0;
     padding: 10px 0 23px;
     margin: 0px 0 0;
+    text-align: center;
+    display: block;
+  }
+
+  .footer-copyright .payments {
+    display: block;
     text-align: center;
   }
 }
