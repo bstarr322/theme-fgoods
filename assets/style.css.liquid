@@ -2226,6 +2226,15 @@ select[multiple].input-lg {
   color: #333;
   text-decoration: none;
 }
+
+.btn:hover,
+.product .quick-view:hover b {
+  box-shadow: 0 3px 3px rgba(0,0,0,0.25) !important;
+  -webkit-transform: translateY(-3px) !important;
+  -ms-transform: translateY(-3px) !important;
+  -o-transform: translateY(-3px) !important;
+  transform: translateY(-3px) !important;
+}
 .btn:active,
 .btn.active {
   outline: 0;
@@ -10107,8 +10116,9 @@ footer.fill-bg {
   padding: 0;
 }
 .footer-copyright a {
-  color: {{ settings.color_base }};
+  color: #ca2123;
   font-size: 1.1em;
+  font-weight: bold;
 }
 .footer-copyright a:hover {
   text-decoration: none;
@@ -10737,7 +10747,7 @@ footer.layout-7 .footer-copyright .row {
   line-height: 1.5em;
   padding: 0 10px;
   margin: 1.48em 0 0.54em;
-  letter-spacing: 0.6px;
+  font-family: Ubuntu, sans-serif;
 }
 .megamenu .product__inside__name h2 {
   margin-top: 1em;
@@ -10796,7 +10806,7 @@ footer.layout-7 .footer-copyright .row {
   transform: scale(0);
 }
 .product .quick-view:hover b {
-  background-color: rgba({{ settings.color_quickviewhover }});
+  background-color: {{ settings.color_quickviewhover }};
   color: {{ settings.color_quickviewtexthover }};
 }
 .product .quick-view b {
@@ -11721,6 +11731,8 @@ footer.layout-7 .footer-copyright .row {
 }
 .product-images-carousel img {
   width: 100%;
+  max-height: 100px;
+  object-fit: contain;
 }
 #mobileGallery {
   margin: 15px 0;
@@ -11736,8 +11748,9 @@ footer.layout-7 .footer-copyright .row {
   font-weight: bold;
 }
 .product-info__price {
-  font-size: 2.5em;
+  font-size: 3em;
   color: {{ settings.color_price }};
+  font-weight: bold;
   text-align: left !important;
 }
 .product-info__description__brand {
@@ -18948,7 +18961,7 @@ body.stop-scrolling #slider .tp-leftarrow {
 }
 @media (min-width: 1025px) {
   .breadcrumbs .container {
-    border-top: 1px solid {{ settings.color_line }};
+    border-bottom: 1px solid {{ settings.color_line }};
   }
 }
 .breadcrumbs--boxed,
@@ -19082,12 +19095,12 @@ body.boxed .breadcrumbs {
   right: -5px;
   font-family: 'Material Icons';
   font-size: 22px;
-  content: "\e148";
+  content: "\e145";
   line-height: 1em;
   color: {{ settings.color_base }};
 }
 .open > .collapse-block__title:after {
-  content: "\e15d";
+  content: "\e15b";
 }
 .collapse-block__icon-left {
   padding-left: 38px;
@@ -24917,8 +24930,9 @@ body.modal-open {
   background-image: linear-gradient(to bottom, #3b3b3b 0%, #171717 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF3B3B3B', endColorstr='#FF171717', GradientType=0);
-  border-top: 1px solid {{ settings.color_headerborder }};
+/*  border-top: 1px solid {{ settings.color_headerborder }};
   border-bottom: 1px solid {{ settings.color_headerborder }};
+*/
 }
 .stuck-nav.fixedbar {
   /*background: {{ settings.color_stucknavigation }} !important;*/
@@ -27573,3 +27587,47 @@ a.promo-design2:hover .btn.btn-underline:after{
 }
 /* /mobile video play
 ==================================== */
+
+
+/* Custom Styles */
+@-webkit-keyframes sheen {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(200%, 0, 0);
+            transform: translate3d(200%, 0, 0);
+  }
+}
+
+@keyframes sheen {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(200%, 0, 0);
+            transform: translate3d(200%, 0, 0);
+  }
+}
+
+.btn-glow {
+  position: relative;
+}
+
+.btn-glow:after {
+  content: '';
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding: 8px;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, #fff 50%, rgba(255,255,255,0) 100%);
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, #fff 50%, rgba(255,255,255,0) 100%);
+  -webkit-animation: sheen 1.0s ease 0.0s infinite;
+  animation: sheen 1.0s ease 0.0s infinite;
+  opacity: 0.2;
+}
