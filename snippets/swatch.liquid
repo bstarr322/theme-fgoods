@@ -70,7 +70,7 @@
               {% else %}{% assign style = value | handle %}
               {% endif %}
             
-              <label for="swatch-{{ option_index }}-{{ value | handle }}" style="background: {{ style }};"{% unless images_color contains _tag_ %} class="color-{{ style }}"{% endunless %}>
+              <label for="swatch-{{ option_index }}-{{ value | handle }}" style="background: url({{ variant.image.src | product_img_url: 'small' }}) no-repeat center center;background-size: contain;"{% unless images_color contains _tag_ %} class="color-{{ style }}"{% endunless %}>
                 <img class="crossed-out" src="{{ 'soldout.png' | asset_url }}" alt="" />
               </label>
             {% else %}

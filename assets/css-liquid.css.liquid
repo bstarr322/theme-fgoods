@@ -118,7 +118,7 @@ button:hover.blink-border
   top:22px;
 }
 #add-item-form .swatch {
-  margin: 0;
+  margin: 15px 0 0 0;
 }
 #add-item-form .btn-holder {
   margin-top: 25px;
@@ -461,8 +461,8 @@ span.spr-badge-caption{
   text-decoration: none;
 
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   font-size: 13px;
   line-height: 40px;
   
@@ -518,7 +518,7 @@ span.spr-badge-caption{
 }
 .swatch .color input:checked + label:before,
 .swatch .color input + label:hover:before {
-  border: 5px solid {{ settings.color_body }};
+  border: 2px solid #5794d5;
 }
 
 .swatch .color.swatch{{ settings.shopby_color_filter_border | replace: '#', '' | downcase }} label:after {
@@ -728,6 +728,11 @@ footer .footer-copyright .row {
   border-top: 1px solid {{ settings.color_footerlines }};
 }
 footer .top-newsletter button {width: 120px;}
+footer .top-newsletter .subscribe-form__element { position: relative; }
+footer .top-newsletter .subscribe-form__element button {
+  position: absolute;
+  height: 100%;
+}
 footer .top-newsletter .subscribe-form__input {width: calc( 100% - 120px );}
 @media (max-width: 767px) {
   footer .footer-copyright .row {
@@ -793,7 +798,7 @@ border: 1px solid {{ settings.color_line }};
 
 @media (min-width: 1298px) {
 .product .options-swatch{      
-      padding: 0 27% !important;
+      padding: 0 15% !important;
     }     
 }
 

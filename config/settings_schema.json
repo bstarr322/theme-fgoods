@@ -2095,7 +2095,7 @@
         "id": "product_item_show_wishlist_temporary",
         "label": "Show Wishlist Temporary",
         "default": true,
-        "info": "Wishlist without accout"
+        "info": "Wishlist without account"
       }
     ]
   },
