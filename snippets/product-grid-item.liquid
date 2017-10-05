@@ -180,7 +180,14 @@
           {% if colorindex > -1 %}
             {% assign check = "" %}
             <ul class="options-swatch options-swatch--color productitem-color-js">
-              {% assign images_color = '' %}{% for i in (1..10) %}{% assign key = 'filter_color' | append: forloop.index %}{% assign value = '__' | append: settings[key] | handle | downcase | strip | append: '__' | append: forloop.index %}{% assign images_color = images_color | append: value | append: ';' %}{% endfor %}
+              {% assign images_color = '' %}
+
+              {% for i in (1..10) %}
+                {% assign key = 'filter_color' | append: forloop.index %}
+                {% assign value = '__' | append: settings[key] | handle | downcase | strip | append: '__' | append: forloop.index %}
+                {% assign images_color = images_color | append: value | append: ';' %}
+              {% endfor %}
+
               {% for variant in product.variants %}
               {% unless variant.available %}{% continue %}{% endunless %}
 
@@ -191,13 +198,28 @@
                 <a href="#" data-tag="{{ tag | handle }}" class="color-border-{{ tag | handle }}" data-img="{% if variant.image %}{{ variant.image.src | product_img_url: 'large' }}{% else %}{% endif %}" data-pr_id="{{ pr_variant.id }}" data-var_id="{{ variant.id }}" data-price="{{ variant.price }}">
                   {% assign _tag_ = tag | handle | downcase %}
                   {% assign _tag_ = "__" | append: _tag_ | append: '__' %}
+                  
+                  {% assign imagescr = images_color | split: _tag_ | last %}
+                  {% assign imagescr = imagescr | split: ';' | first %}
+                  {% assign imagescr = 'filter_color' | append: imagescr | append: '.png' %}
+                  
+                  {% comment %}
+                  <!-- We will just use variant image, not color -->
                   {% if images_color contains _tag_ %}
                   {% assign imagescr = images_color | split: _tag_ | last %}
                   {% assign imagescr = imagescr | split: ';' | first %}
                   {% assign imagescr = 'filter_color' | append: imagescr | append: '.png' %}
                   <img src="{{ imagescr | asset_url }}" alt="">
-                  {% else %}<span class="swatch-label color-{{ tag | handle }}"></span>
+                  {% else %}
+                  <span class="swatch-label color-{{ tag | handle }}"></span>
                   {% endif %}
+                  {% endcomment %}
+                  {% if variant.image %}
+                  <img src="{{ variant.image.src | product_img_url: 'small' }}" alt="{{variant.title}}">
+                  {% else %}
+                  <span class="swatch-label color-{{ tag | handle }}"></span>
+                  {% endif %}
+
                 </a>
               </li>
               {% endunless %}
