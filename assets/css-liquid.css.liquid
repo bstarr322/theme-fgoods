@@ -118,7 +118,7 @@ button:hover.blink-border
   top:22px;
 }
 #add-item-form .swatch {
-  margin: 0;
+  margin: 15px 0 0 0;
 }
 #add-item-form .btn-holder {
   margin-top: 25px;
@@ -728,6 +728,11 @@ footer .footer-copyright .row {
   border-top: 1px solid {{ settings.color_footerlines }};
 }
 footer .top-newsletter button {width: 120px;}
+footer .top-newsletter .subscribe-form__element { position: relative; }
+footer .top-newsletter .subscribe-form__element button {
+  position: absolute;
+  height: 100%;
+}
 footer .top-newsletter .subscribe-form__input {width: calc( 100% - 120px );}
 @media (max-width: 767px) {
   footer .footer-copyright .row {
