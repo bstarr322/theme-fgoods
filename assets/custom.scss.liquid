@@ -2,6 +2,7 @@
 
 /////////////////////////////// CUSTOM STYLES ///////////////////////////////
 // 1. Header
+// 1.1 TopBar
 // 2. Footer
 // 3. Navigation
 /////////////////////////////////////////////////////////////////////////////
@@ -9,6 +10,154 @@
 
 
 // 1. Header
+
+
+// 1.1 TopBar
+
+.topbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-image: -webkit-linear-gradient(top, #0c0c0c 0%, #3e3e3e 100%);
+  background-image: -o-linear-gradient(top, #0c0c0c 0%, #3e3e3e 100%);
+  background-image: linear-gradient(to bottom, #0c0c0c 0%, #3e3e3e 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0C0C0C', endColorstr='#FF3E3E3E', GradientType=0);
+  color: #ffffff;
+
+  a {
+    color: #ffffff;
+    &:hover,
+    &:focus {
+
+    }
+  }
+}
+
+.topbar-notification {
+
+}
+
+.topbar-notification__link {
+
+}
+
+.topbar-notification__message {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  strong {
+    display: block;
+    font-size: 16px;
+  }
+  small {
+    display: block;
+    font-size: 10px;
+    color: #f9bf3a;
+  }
+
+}
+.topbar-nav {
+  line-height: 40px;
+}
+
+.topbar-nav__items {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+}
+
+.topbar-nav__item {
+  float: left;
+  margin-left: 10px;
+}
+
+.topbar-nav__link {
+  .icon {
+    width: 16px;
+    height: 16px;
+    margin-top: -2px;
+    margin-right: 3px;
+  }
+}
+
+.topbar-nav__link__phone {
+  .icon {
+    fill: #f7cb3f;
+  }
+}
+
+.topbar-nav__link__rewards {
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: initial;
+    margin-top: -4px;
+  }
+}
+
+.topbar-nav__link__account {
+  .icon {
+    fill: #fc6466;
+  }
+}
+
+.icon-gift {
+  fill: #e95f5f;
+}
+.topbar-nav__link__gift-card {
+  .icon {
+    fill: #e95f5f;
+  }
+}
+
+.topbar-nav__link__wishlist {
+  .icon {
+    fill: #f1ed87;
+  }
+}
+
+.topbar-nav__link__blog {
+  .icon {
+    width: 14px;
+    height: 14px;
+    fill: #b182c5;
+  }
+}
+
+.topbar-nav__link__cart {
+  .icon {
+    width: 18px;
+    height: 18px;
+    margin-top: -4px;
+    fill: #ff31c7;
+  }
+}
+
+.topbar-nav__link__checkout {
+  .icon {
+    fill: #8bd460;
+  }
+}
+
+.topbar-nav__link__login,
+.topbar-nav__link__logout {
+  .icon {
+    width: 14px;
+    height: 14px;
+    fill: #71a8e1;
+  }
+}
+
+.topbar-nav__link__track_order {
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
 .toggle-menu,
 .icon {
   font-size: 32px;
