@@ -3,6 +3,7 @@
 /////////////////////////////// CUSTOM STYLES ///////////////////////////////
 // 1. Header
 // 2. Footer
+// 3. Navigation
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -36,6 +37,7 @@
   button {
     padding: initial;
     top: 7px;
+    right: 7px;
   }
 }
 
@@ -69,6 +71,7 @@
 #header .container .row {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 
@@ -270,4 +273,32 @@
   100% {
     transform: translateX(-2000px);
   }
+}
+
+// 3. Navigation
+header .mainMenu .navbar-nav > li > a {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.megamenu__submenu li a {
+  font-size: 14px;
+  padding: 10px 7px;
+
+  &:hover {
+    background: initial;
+    font-weight: bold;
+  }
+}
+
+
+.megamenu__subtitle span:first-child {
+  font-size: 14px;
+}
+
+.dropdown .dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background: initial;
+  font-weight: bold;
 }
