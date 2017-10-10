@@ -6177,11 +6177,8 @@ body.fullwidth .container,
     padding-bottom: 0;
   }
   #header .row > div {
-    margin-bottom: -1px;
-    position: static !important;
     padding-left: 0;
     padding-right: 0;
-    width: 100%;
   }
   #header .container {
     width: 100%;
@@ -8272,15 +8269,9 @@ body.loaded #loader-wrapper {
     max-width: 50%;
     margin: 17px 10px 3px 10px;
   }
-  #header .cart {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    margin-top: -34px;
-    right: 45px;
-  }
+
   #header .cart .badge--cart {
-    right: -25px;
+    right: -11px;
   }
   #header .cart .dropdown.text-right .dropdown-menu {
     left: 0;
@@ -8401,13 +8392,8 @@ body.loaded #loader-wrapper {
   -o-transition:  opacity 500ms ease-out 0s;
   transition:  opacity 500ms ease-out 0s;
 }
-.fixedbar .cart {
-  top: 6px;
-  position: relative;
-}
 .fixedbar .badge--cart {
   right: 0;
-  top: -33px;
 }
 .fixedbar .dropdown.text-right {
   margin-right: 10px;
@@ -8460,10 +8446,6 @@ body.loaded #loader-wrapper {
   .fixedbar .offset-top-5 {
     margin-top: 0 !important;
   }
-  .fixedbar .cart {
-    right: 17px !important;
-    margin-top: -26px !important;
-  }
   .fixedbar .cart .dropdown > a .icon {
     color: {{ settings.color_mobiletext }} !important;
     font-size: 2em !important;
@@ -8475,13 +8457,7 @@ body.loaded #loader-wrapper {
     color: {{ settings.color_base }} !important;
   	background: {{ settings.color_mobiletext }} !important;
   }
-  .fixedbar .badge--cart {
-    width: 28px;
-    height: 28px;
-    line-height: 1.6em;
-    top: -20px;
-    right: -30px !important;
-  }
+
   .fixedbar .dropdown.text-right {
     padding-right: 25px;
   }
@@ -9436,26 +9412,13 @@ header .search-dropdown {
     position: relative;
     z-index: 1;
   }
-  #header.header-layout-07 .cart {
-    padding-right: 10px;
-  }
   #header.header-layout-07 .navbar-nav {
     padding-top: 2px;
   }
   #header.header-layout-07 .stuck-nav .col-stuck-cart {
     display: none;
   }
-  #header.header-layout-07 .stuck-nav.fixedbar .col-stuck-menu {
-    width: 85%;
-    float: left;
-  }
-  #header.header-layout-07 .stuck-nav.fixedbar .col-stuck-menu .text-center {
-    text-align: left;
-  }
-  #header.header-layout-07 .stuck-nav.fixedbar .col-stuck-cart {
-    display: block;
-    width: 15%;
-  }
+
 }
 @media (max-width: 1024px) {
   #header.header-layout-07 .fill-bg {
@@ -15907,7 +15870,7 @@ aside .recent-post-box {
   white-space: nowrap;
   font-size: 1.25em;
   overflow: hidden;
-  max-width: 30px;
+  max-width: 25px;
   transition: max-width 500ms ease-out;
 }
 @media (max-width: 1024px) {
