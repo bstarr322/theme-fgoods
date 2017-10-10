@@ -14,7 +14,7 @@
       "no_results_title": "No search results",
       "no_results_html": "Your search for <strong>{{ search }}<\/strong> did not yield any results. Try searching for something else.",
       "results_title": "Search Results For",
-      "place_holder": "SEARCH:"
+      "place_holder": "Search"
     },
     "meta": {
       "keywords": "Shopify Template",

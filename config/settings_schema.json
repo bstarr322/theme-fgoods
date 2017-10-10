@@ -1,11 +1,11 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Yourstore",
-    "theme_author": "Etheme",
-    "theme_version": "2.0.0",
-    "theme_documentation_url": "http:\/\/ocean.tonytemplates.com\/shopify\/yourstore-doc-v2\/",
-    "theme_support_url": "http:\/\/etheme.tonytemplates.com\/forum\/viewforum.php?f=59"
+    "theme_name": "FGoods",
+    "theme_author": "StarSoft",
+    "theme_version": "1.0.0",
+    "theme_documentation_url": "http:\/\/shopify.github.io\/Timber\/",
+    "theme_support_url": "http:\/\/shopify.github.io\/Timber\/"
   },
   {
     "name": "Layout",

@@ -1,3 +1,327 @@
+
+
+/////////////////////////////// CUSTOM STYLES ///////////////////////////////
+// 1. Header
+// 1.1 TopBar
+// 1.2 Sticky Navbar
+// 2. Footer
+// 3. Navigation
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+// 1. Header
+
+
+// 1.1 TopBar
+
+.topbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-image: -webkit-linear-gradient(top, #0c0c0c 0%, #3e3e3e 100%);
+  background-image: -o-linear-gradient(top, #0c0c0c 0%, #3e3e3e 100%);
+  background-image: linear-gradient(to bottom, #0c0c0c 0%, #3e3e3e 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0C0C0C', endColorstr='#FF3E3E3E', GradientType=0);
+  color: #ffffff;
+
+  a {
+    color: #ffffff;
+    &:hover,
+    &:focus {
+
+    }
+  }
+
+  .container {
+    .row {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+  }
+}
+
+.topbar-notification {
+
+}
+
+.topbar-notification__link {
+
+}
+
+.topbar-notification__message {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  strong {
+    display: block;
+    font-size: 16px;
+  }
+  small {
+    display: block;
+    font-size: 10px;
+    color: #f9bf3a;
+  }
+
+}
+.topbar-nav {
+  line-height: 40px;
+}
+
+.topbar-nav__items {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+}
+
+.topbar-nav__item {
+  float: left;
+  margin-left: 10px;
+}
+
+.topbar-nav__link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .icon {
+    width: 16px;
+    height: 16px;
+    margin-top: -2px;
+    margin-right: 3px;
+  }
+}
+
+.topbar-nav__link__phone {
+  .icon {
+    fill: #f7cb3f;
+  }
+}
+
+.topbar-nav__link__rewards {
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: initial;
+    margin-top: -4px;
+  }
+}
+
+.topbar-nav__link__account {
+  .icon {
+    fill: #fc6466;
+  }
+}
+
+.icon-gift {
+  fill: #e95f5f;
+}
+.topbar-nav__link__gift-card {
+  .icon {
+    fill: #e95f5f;
+  }
+}
+
+.topbar-nav__link__wishlist {
+  .icon {
+    fill: #f1ed87;
+  }
+}
+
+.topbar-nav__link__blog {
+  .icon {
+    width: 14px;
+    height: 14px;
+    fill: #b182c5;
+  }
+}
+
+.topbar-nav__link__cart {
+  .icon {
+    width: 18px;
+    height: 18px;
+    margin-top: -4px;
+    fill: #ff31c7;
+  }
+}
+
+.topbar-nav__link__checkout {
+  .icon {
+    fill: #8bd460;
+  }
+}
+
+.topbar-nav__link__login,
+.topbar-nav__link__logout {
+  .icon {
+    width: 14px;
+    height: 14px;
+    fill: #71a8e1;
+  }
+}
+
+.topbar-nav__link__track_order {
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+.toggle-menu,
+.icon {
+  font-size: 32px;
+}
+
+.badge--cart {
+  right: 5px;
+  top: -25px;
+  width: 25px;
+  height: 25px;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+
+// 1.2 Sticky Navbar
+
+#header .stuck-nav {
+  background-image: -webkit-linear-gradient(top, #3b3b3b 0%, #171717 100%) !important;
+  background-image: -o-linear-gradient(top, #3b3b3b 0%, #171717 100%) !important;
+  background-image: linear-gradient(to bottom, #3b3b3b 0%, #171717 100%) !important;
+  background-repeat: repeat-x !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF3B3B3B', endColorstr='#FF171717', GradientType=0);
+
+  .row > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+  }
+
+  .search-outer,
+  .cart,
+  .header-cart {
+    display: none;
+  }
+
+  &.fixedbar {
+    .search-outer,
+    .cart,
+    .header-cart {
+      display: block;
+    }
+
+    .search-outer {
+      width: 100%;
+      margin-right: 10px;
+
+      .input-outer input {
+        background-color: #ffffff;
+      }
+    }
+  } 
+}
+//  Outer Search Box
+.search-outer .input-outer {
+
+  input {
+    height: initial;
+    padding: 11px 15px 11px 20px;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  button {
+    padding: initial;
+    top: 7px;
+    right: 7px;
+  }
+}
+
+
+//  Seach Dropdown
+.search-dropdown {
+  .input-outer {
+    height: initial;
+
+    input {
+      padding: 11px 15px;
+      font-size: 13px;
+      line-height: 1;
+      height: initial;
+    }
+
+    button {
+      padding: initial;
+      right: 50px;
+      top: 7px;
+    }
+  }
+
+  .search__close .icon {
+    padding: initial;
+    line-height: 39px;
+  }
+}
+
+
+#header .container .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+
+@media (max-width: 1024px) {
+  #header .container:first-child .row {
+    padding-top: initial;
+  }
+}
+
+
+
+// 2. Footer
 .loop-wrapper {
   display: block;
   width: 100%;
@@ -142,4 +466,77 @@
       margin-right: -60px;
     }
   }
+}
+
+
+@keyframes tree {
+  0%   { transform: translate(1350px); }
+  50% {}
+  100% { transform: translate(-50px); }
+}
+@keyframes tree2 {
+  0%   { transform: translate(650px); }
+  50% {}
+  100% { transform: translate(-50px); }
+}
+@keyframes tree3 {
+  0%   { transform: translate(2750px); }
+  50% {}
+  100% { transform: translate(-50px); }
+}
+@keyframes rock {
+  0%   { right: -200px; }
+  100% { right: 2000px; }
+}
+@keyframes truck {
+  0%   { }
+  6%   { transform: translateY(0px); }
+  7%   { transform: translateY(-6px); }
+  9%   { transform: translateY(0px); }
+  10%   { transform: translateY(-1px); }
+  11%   { transform: translateY(0px); }
+  100%   { }
+}
+@keyframes wind {
+  0%   {  }
+  50%   { transform: translateY(3px) }
+  100%   { }
+}
+@keyframes mtn {
+  100% {
+    transform: translateX(-2000px) rotate(130deg);
+  }
+}
+@keyframes hill {
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+
+// 3. Navigation
+header .mainMenu .navbar-nav > li > a {
+  font-size: 12px;
+  text-transform: Uppercase;
+}
+
+.megamenu__submenu li a {
+  font-size: 14px;
+  padding: 10px 7px;
+
+  &:hover {
+    background: initial;
+    font-weight: bold;
+  }
+}
+
+
+.megamenu__subtitle span:first-child {
+  font-size: 14px;
+}
+
+.dropdown .dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background: initial;
+  font-weight: bold;
 }
