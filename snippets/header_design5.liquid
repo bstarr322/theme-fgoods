@@ -7,7 +7,7 @@
           <span class="topbar-notification__message slogan main-font">{{ settings.header_slogan }}</span>
         {% endif %}
       </div>
-      <div class="col-sm-8 col-md-9 topbar-nav">
+      <div class="col-sm-8 col-md-9 hidden-xs topbar-nav">
         <ul class="topbar-nav__items">
           
           {% if customer %}
@@ -24,7 +24,6 @@
             <li class="topbar-nav__item"><a href="/account/login" class="topbar-nav__link topbar-nav__link__login">{% include 'icon-lock' %} Log In</a></li>
           {% endif %}
 
-           <li class="topbar-nav__item"><a href="/cart" class="topbar-nav__link topbar-nav__link__cart">{% include 'icon-cart' %} My Cart</a></li>
           <li class="topbar-nav__item"><a href="/checkout" class="topbar-nav__link topbar-nav__link__checkout">{% include 'icon-check-circle-o' %} Checkout</a></li>
         </ul>
       </div>
@@ -49,7 +48,7 @@
           {% include "header-language" align: 'text-right' showTitle: false %}
         </div>
       </div>
-      <div class="col-lg-6 col-lg-offset-0 col-xl-4 col-md-4 col-md-offset-1 text-center">
+      <div class="col-md-7 text-center">
         <div class="search-outer visible-mobile-menu-off">
           <form id="search__form" action="/search" method="get">
             <div class="input-outer">
@@ -60,12 +59,11 @@
           </form>
         </div>
       </div>
-      <div class="pull-right col-md-3  col-lg-2 col-xl-4 alignment-extra">
+      <div class="pull-right col-md-1 alignment-extra">
         <div class="text-right">
-          {% include "menu-search" search_class: "visible-mobile-menu-on" %}
-          {% include "menu-customer" customer_class: "visible-mobile-menu-on" %}
+
           <!-- icon toggle menu -->
-          <div class="link-inline toggle-menu {% if settings.show_multiple_currencies == false and settings.show_menu_language == false %}toggle-menu2{% endif %}{% if settings.show_multiple_currencies and settings.show_menu_language %} toggle-menu3{% endif %} visible-mobile-menu-off">
+          <div class="hide link-inline toggle-menu {% if settings.show_multiple_currencies == false and settings.show_menu_language == false %}toggle-menu2{% endif %}{% if settings.show_multiple_currencies and settings.show_menu_language %} toggle-menu3{% endif %} visible-mobile-menu-off">
             <span class="icon icon-menu"></span>									
             <ul class="dropdown-menu " role="menu">
               <li class='li-col-full'>
