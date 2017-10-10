@@ -242,7 +242,7 @@
           {% endif %}
         
         <div class="product__inside__info__btns">
-          {% if settings.product_item_show_cart %}<a {% if func == "" %}{% if settings.product_item_showqv %}href="javascript:void(0);" onclick="quiqview('{{ product.handle | handleize }}')"{% else %}href="{{ product.url | within: collection }}"{% endif %}{% else %}href="javascript:void(0);" onclick="{{ func }}; return false;"{% endif %} class="btn btn--ys btn--xl addtocart-js">{% if func == "" %}{{ 'products.product.select_options_html' | t }}{% else %}{{ 'products.product.add_to_cart_html' | t }}{% endif %}</a>{% endif %}
+          {% if settings.product_item_show_cart %}<a {% if func == "" %}{% if settings.product_item_showqv %}href="javascript:void(0);" onclick="quiqview('{{ product.handle | handleize }}')"{% else %}href="{{ product.url | within: collection }}"{% endif %}{% else %}href="javascript:void(0);" onclick="{{ func }}; return false;"{% endif %} class="btn btn--ys addtocart-js">{% if func == "" %}{{ 'products.product.select_options_html' | t }}{% else %}{{ 'products.product.add_to_cart_html' | t }}{% endif %}</a>{% endif %}
           {% if settings.product_item_show_wishlist %}{% if shop.customer_accounts_enabled or settings.product_item_show_wishlist_temporary %}{% include "wishlist-product" button: true %}{% endif %}{% endif %}
           {% if settings.product_item_showqv %}<a href="javascript:void(0);" onclick="quiqview('{{ product.handle | handleize }}')" class="btn btn--ys btn--xl  row-mode-visible hidden-xs"><span class="icon icon-visibility"></span> {{ "products.general.quick_view" | t }}</a>{% endif %}
         </div>
