@@ -2552,8 +2552,9 @@ function setNewData($this){
   }
   $pr_parent.find('.addtocart-js').attr('onclick', 'Shopify.addItem('+$this.attr('data-var_id')+', 1)');
   if($j('.button_massage').length) $pr_parent.find('.addtocart-js').html($j('.button_massage').html());
-
-  $pr_parent.find('.product__inside__price').html('<span class="money">'+$this.attr('data-price')+'</span>');
+  
+  var price = Shopify.formatMoney($this.attr('data-price'), window.moneyFormat);
+  $pr_parent.find('.product__inside__price').html('<span class="money">'+ price +'</span>');
   $j('.currency .active').trigger('click');
 }
 $j(document).ready(function() {

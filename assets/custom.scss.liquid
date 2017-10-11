@@ -1,14 +1,60 @@
 
+/////////////////////////////// CUSTOM STYLES ///////////////////////////////
+
+@mixin transition($t, $a:0, $b:0, $c:0) {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+  @if $a == 0 and $b == 0 and $c == 0 {
+    -webkit-transition: all $t ease-in-out;
+    -moz-transition: all $t ease-in-out;
+    transition: all $t ease-in-out;
+  }
+
+  @if $a != 0 and $b == 0 and $c == 0 {
+    -webkit-transition: $a $t ease-in-out;
+    -moz-transition: $a $t ease-in-out;
+    transition: $a $t ease-in-out;
+  }
+
+  @if $a != 0 and $b != 0 and $c == 0 {
+    -webkit-transition: $a $t ease-in-out, $b $t ease-in-out;
+    -moz-transition: $a $t ease-in-out, $b $t ease-in-out;
+    transition: $a $t ease-in-out, $b $t ease-in-out;
+  }
+
+  @if $a != 0 and $b != 0 and $c != 0 {
+    -webkit-transition: $a $t ease-in-out, $b $t ease-in-out, $c $t ease-in-out;
+    -moz-transition: $a $t ease-in-out, $b $t ease-in-out, $c $t ease-in-out;
+    transition: $a $t ease-in-out, $b $t ease-in-out, $c $t ease-in-out;
+  }
+}
+
+
 
 /////////////////////////////// CUSTOM STYLES ///////////////////////////////
+// *** Global Styles
 // 1. Header
 // 1.1 TopBar
 // 1.2 Sticky Navbar
 // 2. Footer
 // 3. Navigation
 // 4. Product page
+// 4.2 Social Sharing
 /////////////////////////////////////////////////////////////////////////////
 
+
+// *** Global Styles
+a {
+  // @include transition(.3s, background, border-color, color);
+
+  &:hover,
+  &:focus {
+    text-decoration: initial;
+  }
+}
 
 
 // 1. Header
@@ -554,4 +600,47 @@ header .mainMenu .navbar-nav > li > a {
 .subscribe-box .btn {
   background-color: rgba(33, 150, 243, 0.9);
   color: #ffffff;
+}
+
+// 4.2 Social Sharing
+.social-sharing {
+  .icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+  }
+
+  .icon-google-plus {
+    width: 35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .social-sharing__title {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}
+
+.social-sharing__link {
+  color: #333;
+  opacity: 0.7;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+
+    svg, path {
+      fill: rgba(33,150,243,0.9);
+    }
+  }
+
+  & + & {
+    margin-left: 15px;
+  }
+}
+.product-link-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

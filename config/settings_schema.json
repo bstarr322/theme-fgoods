@@ -2151,6 +2151,12 @@
       },
       {
         "type": "checkbox",
+        "id": "show_product_sharing",
+        "label": "Show Social Sharing",
+        "default": true
+      },
+      {
+        "type": "checkbox",
         "id": "show_product_rating",
         "label": "Show Rating",
         "default": true
