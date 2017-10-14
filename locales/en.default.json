@@ -359,9 +359,9 @@
       "button": "SUBSCRIBE"
     },
     "popup_newsletter": {
-      "title": "The Best Store!",
-      "message": "Your E-mail...",
-      "button": "subscribe",
+      "title": "Subscribe!",
+      "message": "Email",
+      "button": "SUBSCRIBE NOW",
       "question": "DON'T SHOW THIS POPUP AGAIN"
     }
   },
