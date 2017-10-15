@@ -1,4 +1,21 @@
-{% assign tags = settings.shopby_tags_filter | split: ',' %}{% assign array = '' %}{% assign tag_lang = '' %}{% for tag in tags %}{% if tag contains '__' %}{% assign value = tag | split: '__' | first %}{% assign array = array | append: ',' | append: value %}{% assign value = tag | split: '__' | last | strip %}{% assign tag_lang = tag_lang | append: ',' | append: value %}{% else %}{% assign array = array | append: ',' | append: tag %}{% assign tag_lang = tag_lang | append: ',' | append: '_empty_' %}{% endif %}{% endfor %}{% assign tags = array | split: ',' %}{% assign tag_lang = tag_lang | split: ',' %}
+{% assign tags = settings.shopby_tags_filter | split: ',' %}
+{% assign array = '' %}
+{% assign tag_lang = '' %}
+
+{% for tag in tags %}
+  {% if tag contains '__' %}
+    {% assign value = tag | split: '__' | first %}
+    {% assign array = array | append: ',' | append: value %}
+    {% assign value = tag | split: '__' | last | strip %}
+    {% assign tag_lang = tag_lang | append: ',' | append: value %}
+  {% else %}
+    {% assign array = array | append: ',' | append: tag %}
+    {% assign tag_lang = tag_lang | append: ',' | append: '_empty_' %}
+  {% endif %}
+{% endfor %}
+
+{% assign tags = array | split: ',' %}
+{% assign tag_lang = tag_lang | split: ',' %}
 
 {% assign open = '' %}{% if opentabs contains index %}{% assign open = 'open' %}{% endif %}
 <div class="collapse-block {{ open }} tags-filter-block">
@@ -7,10 +24,12 @@
     <ul class="tags-list tag-filter filter-popup">
         
         {% assign tag_size = 0 %}
+
         {% for t in tags %}
           {% assign tag = t | strip | downcase %}
           {% assign all_tags = collection.all_tags | downcase %}
           {% assign checktag = '"' | append: tag | append: '"' %}
+
           {% if all_tags contains checktag %}
             {% assign size = 0 %}
             {% for product in _collectionMax %}
@@ -25,7 +44,7 @@
       			  {% endif %}{% endif %}{% endif %}{% endif %}{% endif %}
               {% endif %}
             {% endfor %}
-            {% if size > 0 %}
+
               {% assign tag_size = tag_size | plus: 1 %}
               {% assign cur_tags = current_tags | downcase %}
               {% capture class %}{% if cur_tags contains checktag %}active{% endif %}{% endcapture %}
@@ -33,7 +52,6 @@
                 {% capture string %}{% if tag_lang[forloop.index0] != '_empty_' %}{{ tag_lang[forloop.index0] }}{% else %}{{ t | strip }}{% endif %}{% endcapture %}
 				<span class="filter-title">{{ string }}</span><a href="#" data-handle="{{ tag | handle }}"{% if class != '' %} class="clear-tag"{% endif %}>{{ string }}</a>
               </li>
-            {% endif %}
           {% endif %}
         {% endfor %}
           <script class='tag-filter-js-2'>
