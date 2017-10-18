@@ -44,7 +44,7 @@
       			  {% endif %}{% endif %}{% endif %}{% endif %}{% endif %}
               {% endif %}
             {% endfor %}
-
+            {% if size > 0 %}
               {% assign tag_size = tag_size | plus: 1 %}
               {% assign cur_tags = current_tags | downcase %}
               {% capture class %}{% if cur_tags contains checktag %}active{% endif %}{% endcapture %}
@@ -52,6 +52,7 @@
                 {% capture string %}{% if tag_lang[forloop.index0] != '_empty_' %}{{ tag_lang[forloop.index0] }}{% else %}{{ t | strip }}{% endif %}{% endcapture %}
 				<span class="filter-title">{{ string }}</span><a href="#" data-handle="{{ tag | handle }}"{% if class != '' %} class="clear-tag"{% endif %}>{{ string }}</a>
               </li>
+            {% endif %}
           {% endif %}
         {% endfor %}
           <script class='tag-filter-js-2'>
