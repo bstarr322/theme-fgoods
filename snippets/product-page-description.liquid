@@ -152,7 +152,12 @@
   <br>
   {% endif %}
 </form>
-
-<ul class="product-link">
-  {% if settings.product_item_show_wishlist %}{% if shop.customer_accounts_enabled or settings.product_item_show_wishlist_temporary %}<li class="text-right">{% include "wishlist-product" %}</li>{% endif %}{% endif %}
-</ul>
+<div class="divider divider--xs product-info__divider"></div>
+<div class="product-link-wrapper">
+  <ul class="product-link">
+    {% if settings.product_item_show_wishlist %}{% if shop.customer_accounts_enabled or settings.product_item_show_wishlist_temporary %}<li class="text-right">{% include "wishlist-product" %}</li>{% endif %}{% endif %}
+  </ul>
+  {% if settings.show_product_sharing %}
+    {% include 'social-sharing' %}
+  {% endif %}
+</div>

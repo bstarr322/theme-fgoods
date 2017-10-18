@@ -1,14 +1,213 @@
 
+/////////////////////////////// CUSTOM STYLES ///////////////////////////////
+// --------------------------------------------------
+// Flexbox SASS mixins
+// The spec: http://www.w3.org/TR/css3-flexbox
+// --------------------------------------------------
+
+// Flexbox display
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+// The 'flex' shorthand
+// - applies to: flex items
+// <positive-number>, initial, auto, or none
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+     -moz-box-flex: $values;
+      -webkit-flex: $values;
+      -ms-flex: $values;
+          flex: $values;
+}
+
+// Flex Flow Direction
+// - applies to: flex containers
+// row | row-reverse | column | column-reverse
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+     -moz-flex-direction: $direction;
+      -ms-flex-direction: $direction;
+          flex-direction: $direction;
+}
+
+// Flex Line Wrapping
+// - applies to: flex containers
+// nowrap | wrap | wrap-reverse
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+     -moz-flex-wrap: $wrap;
+      -ms-flex-wrap: $wrap;
+          flex-wrap: $wrap;
+}
+
+// Flex Direction and Wrap
+// - applies to: flex containers
+// <flex-direction> || <flex-wrap>
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+     -moz-flex-flow: $flow;
+      -ms-flex-flow: $flow;
+          flex-flow: $flow;
+}
+
+// Display Order
+// - applies to: flex items
+// <integer>
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+     -moz-box-ordinal-group: $val;     
+         -ms-flex-order: $val;     
+          -webkit-order: $val;  
+            order: $val;
+}
+
+// Flex grow factor
+// - applies to: flex items
+// <number>
+@mixin flex-grow($grow) {
+  -webkit-flex-grow: $grow;
+     -moz-flex-grow: $grow;
+      -ms-flex-grow: $grow;
+          flex-grow: $grow;
+}
+
+// Flex shrink
+// - applies to: flex item shrink factor
+// <number> 
+@mixin flex-shrink($shrink) {
+  -webkit-flex-shrink: $shrink;
+     -moz-flex-shrink: $shrink;
+      -ms-flex-shrink: $shrink;
+          flex-shrink: $shrink;
+}
+
+// Flex basis
+// - the initial main size of the flex item
+// - applies to: flex itemsnitial main size of the flex item
+// <width> 
+@mixin flex-basis($width) {
+  -webkit-flex-basis: $width;
+     -moz-flex-basis: $width;
+      -ms-flex-basis: $width;
+          flex-basis: $width;
+}
+
+// Axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | space-between | space-around 
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+     -moz-justify-content: $justify;
+      -ms-justify-content: $justify;
+          justify-content: $justify;
+            -ms-flex-pack: $justify;
+}
+
+// Packing Flex Lines
+// - applies to: multi-line flex containers
+// flex-start | flex-end | center | space-between | space-around | stretch 
+@mixin align-content($align) {
+  -webkit-align-content: $align;
+     -moz-align-content: $align;
+      -ms-align-content: $align;
+          align-content: $align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | baseline | stretch 
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+     -moz-align-items: $align;
+      -ms-align-items: $align;
+          align-items: $align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex items
+// auto | flex-start | flex-end | center | baseline | stretch 
+@mixin align-self($align) {
+  -webkit-align-self: $align;
+     -moz-align-self: $align;
+      -ms-align-self: $align;
+          align-self: $align;
+}
+
+
+@mixin transition($t, $a:0, $b:0, $c:0) {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+  @if $a == 0 and $b == 0 and $c == 0 {
+    -webkit-transition: all $t ease-in-out;
+    -moz-transition: all $t ease-in-out;
+    transition: all $t ease-in-out;
+  }
+
+  @if $a != 0 and $b == 0 and $c == 0 {
+    -webkit-transition: $a $t ease-in-out;
+    -moz-transition: $a $t ease-in-out;
+    transition: $a $t ease-in-out;
+  }
+
+  @if $a != 0 and $b != 0 and $c == 0 {
+    -webkit-transition: $a $t ease-in-out, $b $t ease-in-out;
+    -moz-transition: $a $t ease-in-out, $b $t ease-in-out;
+    transition: $a $t ease-in-out, $b $t ease-in-out;
+  }
+
+  @if $a != 0 and $b != 0 and $c != 0 {
+    -webkit-transition: $a $t ease-in-out, $b $t ease-in-out, $c $t ease-in-out;
+    -moz-transition: $a $t ease-in-out, $b $t ease-in-out, $c $t ease-in-out;
+    transition: $a $t ease-in-out, $b $t ease-in-out, $c $t ease-in-out;
+  }
+}
+
+
 
 /////////////////////////////// CUSTOM STYLES ///////////////////////////////
+// *** Global Styles
 // 1. Header
 // 1.1 TopBar
 // 1.2 Sticky Navbar
+// 1.3 Search Results
+
 // 2. Footer
 // 3. Navigation
 // 4. Product page
+// 4.2 Social Sharing
 /////////////////////////////////////////////////////////////////////////////
 
+
+// *** Global Styles
+a {
+  // @include transition(.3s, background, border-color, color);
+
+  &:hover,
+  &:focus {
+    text-decoration: initial;
+  }
+}
+
+// Hide Placeholder on focus
+::-webkit-input-placeholder { opacity: 1; -webkit-transition: opacity .5s; transition: opacity .5s; }  /* Chrome <=56, Safari < 10 */
+:-moz-placeholder { opacity: 1; -moz-transition: opacity .5s; transition: opacity .5s; } /* FF 4-18 */
+::-moz-placeholder { opacity: 1; -moz-transition: opacity .5s; transition: opacity .5s; } /* FF 19-51 */
+:-ms-input-placeholder { opacity: 1; -ms-transition: opacity .5s; transition: opacity .5s; } /* IE 10+ */
+::placeholder { opacity: 1; transition: opacity .5s; } /* Modern Browsers */
+
+*:focus::-webkit-input-placeholder { opacity: 0; } /* Chrome <=56, Safari < 10 */
+*:focus:-moz-placeholder { opacity: 0; } /* FF 4-18 */
+*:focus::-moz-placeholder { opacity: 0; } /* FF 19-50 */
+*:focus:-ms-input-placeholder { opacity: 0; } /* IE 10+ */
+*:focus::placeholder { opacity: 0; } /* Modern Browsers */
 
 
 // 1. Header
@@ -36,17 +235,8 @@
 
   .container {
     .row {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: flex;
-
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -moz-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
+      @include flexbox();
+      @include align-items(center);
     }
   }
 }
@@ -92,17 +282,8 @@
 }
 
 .topbar-nav__link {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  @include flexbox();
+  @include align-items(center);
 
   .icon {
     width: 16px;
@@ -213,20 +394,9 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF3B3B3B', endColorstr='#FF171717', GradientType=0);
 
   .row > div {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-
-    justify-content: space-between;
-    -webkit-justify-content: space-between;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(space-between);
   }
 
   .search-outer,
@@ -298,19 +468,9 @@
 
 
 #header .container .row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-
-  flex-wrap: wrap;
+  @include flexbox();
+  @include align-items(center);
+  @include flex-wrap(wrap);
 }
 
 
@@ -321,6 +481,21 @@
 }
 
 
+// 1.3 Search Results
+.search-results {
+  li a {
+    @include flexbox();
+    @include align-items(center);
+  }
+
+  .thumbnail {
+    width: 40px;
+    height: 40px;
+  }
+  .title {
+    text-overflow: ellipsis;
+  }
+}
 
 // 2. Footer
 .loop-wrapper {
@@ -554,4 +729,47 @@ header .mainMenu .navbar-nav > li > a {
 .subscribe-box .btn {
   background-color: rgba(33, 150, 243, 0.9);
   color: #ffffff;
+}
+
+// 4.2 Social Sharing
+.social-sharing {
+  .icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+  }
+
+  .icon-google-plus {
+    width: 35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .social-sharing__title {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}
+
+.social-sharing__link {
+  color: #333;
+  opacity: 0.7;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+
+    svg, path {
+      fill: rgba(33,150,243,0.9);
+    }
+  }
+
+  & + & {
+    margin-left: 15px;
+  }
+}
+.product-link-wrapper {
+  @include flexbox();
+  @include align-items(center);
+  @include flex-wrap(space-between);
 }

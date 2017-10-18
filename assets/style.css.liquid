@@ -19903,7 +19903,7 @@ li.open .expander-list ul {
   top: 0;
   left: 0;
   line-height: 3em;
-  background: {{ settings.color_filterbtnbgclose }};
+  /*background: {{ settings.color_filterbtnbgclose }};*/
   color: {{ settings.color_filterbtntextclose }};
   font-family: 'Material Icons';
   font-style: normal;
@@ -19919,6 +19919,11 @@ li.open .expander-list ul {
 }
 .collapse-block .filter-popup .active {
   padding-top: 29px !important;
+}
+.collapse-block .filter-popup .active a {
+  /*background-color: #333333;
+  border-color: #333333;
+  color: #ffffff;*/
 }
 .collapse-block .options-swatch--color li a:hover:before {
   background: none;
@@ -22876,11 +22881,11 @@ button.pull-right,
   border: 0;
   text-transform: uppercase;
   letter-spacing: 1px;
-  -webkit-transition:  all 300ms 0s ease;
-  -moz-transition:  all 300ms 0s ease;
-  -ms-transition:  all 300ms 0s ease;
-  -o-transition:  all 300ms 0s ease;
-  transition:  all 300ms 0s ease;
+  -webkit-transition:  all 300ms linear 0s;
+  -moz-transition:  all 300ms linear 0s;
+  -ms-transition:  all 300ms linear 0s;
+  -o-transition:  all 300ms linear 0s;
+  transition:  all 300ms linear 0s;
 }
 .btn--ys.text-lowercase {
   text-transform: lowercase;
@@ -24603,9 +24608,10 @@ body.modal-open {
   max-height: 80px;
 }
 .modal-newsletter .modal-title {
-  font-size: 21px;
+  font-size: 30px;
   line-height: 1.1em;
   padding-bottom: 15px;
+  color: #008000;
 }
 .modal-newsletter p {
   padding-bottom: 7px;
@@ -24629,6 +24635,7 @@ body.modal-open {
 .modal-newsletter .row-subscibe button {
   font-size: 18px;
   height: 60px;
+/*   background-color: #3EAC12; */
 }
 .modal-newsletter .checkbox-group label {
   font-size: 12px;

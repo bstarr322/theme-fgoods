@@ -27,6 +27,13 @@
       "toggle_account": "My Account",
       "toggle_currency": "Currency",
       "toggle_language": "Language"
+    },
+    "social": {
+      "share_on_facebook": "Share",
+      "share_on_twitter": "Tweet",
+      "share_on_pinterest": "Pin it",
+      "share_on_fancy": "Fancy",
+      "share_title": "Share"
     }
   },
   "layout": {
@@ -352,9 +359,9 @@
       "button": "SUBSCRIBE"
     },
     "popup_newsletter": {
-      "title": "The Best Store!",
-      "message": "Your E-mail...",
-      "button": "subscribe",
+      "title": "Subscribe!",
+      "message": "Email",
+      "button": "SUBSCRIBE NOW",
       "question": "DON'T SHOW THIS POPUP AGAIN"
     }
   },
