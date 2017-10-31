@@ -153,7 +153,7 @@
     "transparent_header": false,
     "headertransparentcolor": "#ffffff",
     "headertransparentbgcolor": "#ffffff",
-    "header_slogan": "<strong>Free Shipping, Free Returns<\/strong> <small>Standard Shipping • No Code • US Shipping Only<\/small>",
+    "header_slogan": "<small>Free Shipping, Free Returns<\/small>Use WELCOME to get 10% discount",
     "show_line": true,
     "showfixedbar": true,
     "transparent_footer": false,
@@ -204,7 +204,7 @@
     "menu_icon_hot": "Sale",
     "menu_icon_new": "New",
     "submenu_type3": "",
-    "submenu_type_and_list_1": "womens",
+    "submenu_type_and_list_1": "clothing",
     "submenu_type_and_list_grid_1": "4",
     "submenu_images_1": "https:\/\/cdn.shopify.com\/s\/files\/1\/2276\/1371\/products\/product-image-312327113_large.jpg?v=1505948163,\nhttps:\/\/cdn.shopify.com\/s\/files\/1\/2276\/1371\/products\/product-image-312327113_large.jpg?v=1505948163,\nhttps:\/\/cdn.shopify.com\/s\/files\/1\/2276\/1371\/products\/product-image-312327113_large.jpg?v=1505948163,\nhttps:\/\/cdn.shopify.com\/s\/files\/1\/2276\/1371\/products\/product-image-312327113_large.jpg?v=1505948163,\nhttps:\/\/cdn.shopify.com\/s\/files\/1\/2276\/1371\/products\/product-image-312327113_large.jpg?v=1505948163,\nhttps:\/\/cdn.shopify.com\/s\/files\/1\/2276\/1371\/products\/product-image-312327113_large.jpg?v=1505948163",
     "submenu_customhtml_1": "<div class=\"row\">\r\n<div class=\"col-sm-6\"> <a href=\"#\" class=\"discolor-hover\"><img class=\"img-responsive\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/1236\/4838\/files\/banner-megamenu-01.jpg?16466298140297529436\" alt=\"\"><\/a>\n<\/div>\r\n<div class=\"col-sm-6\"> <a href=\"#\" class=\"discolor-hover\"><img class=\"img-responsive\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/1236\/4838\/files\/banner-megamenu-02.jpg?16466298140297529436\" alt=\"\"><\/a>\n<\/div>\r\n<\/div>",
@@ -231,7 +231,7 @@
     "submenu_collectiontitlelink_3": "#",
     "submenu_collection_3": "",
     "submenu_collectionlength_3": "4",
-    "submenu_type_and_list_4": "shoes",
+    "submenu_type_and_list_4": "_shoes",
     "submenu_type_and_list_grid_4": "3",
     "submenu_images_4": "",
     "submenu_customhtml_4": "",
@@ -271,13 +271,13 @@
     "product_tabs_work": "design3",
     "show_product_tab_1": true,
     "product_tab_title_1": "Description",
-    "show_product_tab_2": true,
+    "show_product_tab_2": false,
     "product_tab_title_2": "Custom Tab",
     "product_tab_desc_2": "<h5><strong class=\"color text-uppercase\">Lorem ipsum dolor sit amet conse ctetur adipisicing elit<\/strong><\/h5>\r\n\t\t\t\t\t\t\t\t<div class=\"divider divider--xs\"><\/div>\r\n\t\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  orem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>\r\n\t\t\t\t\t\t\t\t<ul class=\"marker-list-circle\">\r\n\t\t\t\t\t\t\t\t\t<li><span class=\"text-uppercase\">Lorem ipsum dolor sit amet<\/span><\/li>\r\n\t\t\t\t\t\t\t\t\t<li><span class=\"text-uppercase\">Conse ctetur adipisicing<\/span><\/li>\r\n\t\t\t\t\t\t\t\t\t<li><span class=\"text-uppercase\">Elit sed do eiusmod tempor<\/span><\/li>\r\n\t\t\t\t\t\t\t\t\t<li><span class=\"text-uppercase\">Incididunt ut laborev<\/span><\/li>\r\n\t\t\t\t\t\t\t\t\t<li><span class=\"text-uppercase\">Et dolore magna aliqua<\/span><\/li>\r\n\t\t\t\t\t\t\t\t\t<li><span class=\"text-uppercase\">Ut enim ad min<\/span><\/li>\r\n\t\t\t\t\t\t\t\t<\/ul>",
-    "show_product_tab_3": true,
+    "show_product_tab_3": false,
     "product_tab_title_3": "SIZING GUIDE",
     "product_tab_desc_3": "<h5><strong class=\"color text-uppercase\">Clothing - Single Size Conversion (Continued)<\/strong><\/h5>\r\n\t\t\t\t\t\t\t\t<div class=\"divider divider--xs\"><\/div>\r\n\t\t\t\t\t\t\t\t<div class=\"table-responsive\">\r\n\t\t\t\t\t\t\t\t\t<table class=\"table table-params\">\r\n\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td class=\"text-right\"><span class=\"color\">UK<\/span><\/td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<ul class=\"sizes-row\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>18<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>20<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>22<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>24<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>26<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<\/ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<\/td>\r\n\t\t\t\t\t\t\t\t\t\t\t<\/tr>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td class=\"text-right\"><span class=\"color\">European<\/span><\/td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<ul class=\"sizes-row\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>46<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>48<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>50<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>52<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>54<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<\/ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<\/td>\r\n\t\t\t\t\t\t\t\t\t\t\t<\/tr>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td class=\"text-right\"><span class=\"color\">US<\/span><\/td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<ul class=\"sizes-row\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>14<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>16<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>18<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>20<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>22<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<\/ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<\/td>\r\n\t\t\t\t\t\t\t\t\t\t\t<\/tr>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td class=\"text-right\"><span class=\"color\">Australia<\/span><\/td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<ul class=\"sizes-row\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>8<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>10<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>12<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>14<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>16<\/li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<\/ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<\/td>\r\n\t\t\t\t\t\t\t\t\t\t\t<\/tr>\r\n\t\t\t\t\t\t\t\t\t\t<\/tbody>\r\n\t\t\t\t\t\t\t\t\t<\/table>\r\n\t\t\t\t\t\t\t\t<\/div>",
-    "show_product_tab_4": true,
+    "show_product_tab_4": false,
     "product_tab_title_4": "TAGS",
     "show_product_tab_5": true,
     "product_tab_title_5": "REVIEWS",
@@ -321,15 +321,15 @@
     "blog_sidebar_customhtml2_show": true,
     "blog_sidebar_customhtml2_title": "META",
     "blog_sidebar_customhtml2_content": "<ul class=\"categories-list\">\r\n<li><a href=\"#\">Entries RSS<\/a><\/li>\r\n<li><a href=\"#\">WordPress.org<\/a><\/li>\r\n<li><a href=\"#\">Magento<\/a><\/li>\r\n<li><a href=\"#\">Shopify<\/a><\/li>\r\n<\/ul>",
-    "pagination_limit": "9",
-    "products_in_column": "three",
+    "pagination_limit": "20",
+    "products_in_column": "four",
     "enable_infinite_scroll": true,
     "show_collection_description": true,
     "enable_scroll_sidebar": true,
     "listing_page_design": "left-sidebar",
     "sidebar_opened_tabs": "1,2,3,4,5,6",
     "show_shopby_type_filter": true,
-    "shopby_type_filter": "Clothing,\nJewelry,\nWatches,\nShoes,\nBags",
+    "shopby_type_filter": "Clothing,\nBasic Jackets,\nParkas,\nReal Fur,\nBlazers,\nWool & Blends,\nLeather & Suede,\nGloves & Mittens,\nHeadwear,\nScraves & Wraps,\nHats & Caps,\nBelts & Cummerbunds,\nShoes,\nFlats,\nBoots,\nPumps,\nSandals,\nSlippers,\nVulcanize Shoes,\nCasual Shoes,\nFormal Shoes,\nBags,\nFashion Backpacks,\nTotes,\nShoulder Bags,\nWallets,\nEvening Bags,\nClutches,\nMen's Backpacks,\nCrossbody Bags,\nBriefcases,\nLuggage &amp; Travel Bags,\nKids &amp; Baby Bags,\nCosmetic Bags &amp; Cases,\nCoin Purses &amp; Holders,\nLuggage Cover,\nPassport Cover,\nBag Parts &amp; Accessories,\n\nJewelry,\nJewelry Sets,\nRings,\nEarrings,\nNecklaces & Pendants,\nBracelets & Bangles,\n\nWatches,\nSports Watches, \nDress Watches, \nBracelet Watches, \nLovers' Watches, \nChildren's Watches, \nCreative Watches",
     "show_shopby_color_filter": true,
     "shopby_color_filter_border": "White",
     "shopby_color_filter": "Black,\nWhite,\nRed,\nBlue,\nGreen,\nGray,\nBrown,\nPink,\nDark Blue,\nLight Yellow,\nLight Green,\nLight Blue",
@@ -356,8 +356,8 @@
     "filter_color9": "",
     "filter_color10": "",
     "mailchimp_form_action": "\/\/shop.us16.list-manage.com\/subscribe\/post?u=f78199cb9526fd0fce03683f9&amp;id=38a7869a80",
-    "popup_newsletter_show": true,
-    "popup_newsletter_description": "<p class=\"font20 custom-font\" style=\"color: #ff6600\">\nSign up for our newsletter to receive special offers, contests, and to be one of the first to hear about our latest products!\n<\/p>",
+    "popup_newsletter_show": false,
+    "popup_newsletter_description": "<p class=\"font20 custom-font\">\nSign up for our newsletter to receive special offers, contests, and to be one of the first to hear about our latest products!\n<\/p>",
     "popup_newsletter_delay_first": "2000",
     "popup_newsletter_delay": "3",
     "cart_design": "default",
@@ -885,190 +885,6 @@
           "title": "CATEGORIES"
         }
       },
-      "1479766932162": {
-        "type": "instagram",
-        "settings": {
-          "userid": "2324131028",
-          "clientid": "422b4d6cf31747f7990a723ca097f64e",
-          "accesstoken": "2324131028.422b4d6.d6d71d31431a4e8fbf6cb1efa1a2dfdc",
-          "title": "INSTAGRAM FEED",
-          "design": "design1"
-        }
-      },
-      "1479767951397": {
-        "type": "testimonials",
-        "blocks": {
-          "1479767951397-0": {
-            "type": "comment_item",
-            "settings": {
-              "image": "",
-              "link": "",
-              "item_title": "Eleanor",
-              "item_hobby": "- Designer",
-              "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec eros tellus, scelerisque nec, rhoncus eget, laoreet sit amet."
-            }
-          },
-          "1479767951397-1": {
-            "type": "comment_item",
-            "settings": {
-              "image": "",
-              "link": "",
-              "item_title": "Eleanor",
-              "item_hobby": "- Designer",
-              "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec eros tellus, scelerisque nec, rhoncus eget, laoreet sit amet."
-            }
-          },
-          "1479767951397-2": {
-            "type": "comment_item",
-            "settings": {
-              "image": "",
-              "link": "shopify:\/\/blogs\/news",
-              "item_title": "Eleanor",
-              "item_hobby": "- Designer",
-              "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec eros tellus, scelerisque nec, rhoncus eget, laoreet sit amet."
-            }
-          }
-        },
-        "block_order": [
-          "1479767951397-0",
-          "1479767951397-1",
-          "1479767951397-2"
-        ],
-        "settings": {
-          "title": "Testimonials",
-          "show_quotes": true,
-          "parllax_image": "",
-          "module_autoplay": false,
-          "delay_time": "7000",
-          "use_custom_color": false,
-          "color_base": "#333333",
-          "color_title1": "#333333",
-          "color_title2": "#333333",
-          "color_title3": "#777777",
-          "color_title4": "#333333"
-        }
-      },
-      "1479768233251": {
-        "type": "featured-blog",
-        "settings": {
-          "title": "Blog posts",
-          "blog": "",
-          "products_in_row": "3",
-          "post_limit": "3",
-          "blog_show_author": true,
-          "blog_show_date": true,
-          "show_comments": true,
-          "truncate": "15",
-          "truncate_last_symbols": "...",
-          "step": "1",
-          "module_autoplay": false,
-          "delay_time": "7000",
-          "showbgimage": false,
-          "image": ""
-        }
-      },
-      "1479768269224": {
-        "type": "brands-list",
-        "blocks": {
-          "1479768269224-0": {
-            "type": "logo_image",
-            "settings": {
-              "image": "",
-              "link": ""
-            }
-          },
-          "1479768269224-1": {
-            "type": "logo_image",
-            "settings": {
-              "image": "",
-              "link": ""
-            }
-          },
-          "1479768269224-2": {
-            "type": "logo_image",
-            "settings": {
-              "image": "",
-              "link": ""
-            }
-          },
-          "1479768269224-3": {
-            "type": "logo_image",
-            "settings": {
-              "image": "",
-              "link": ""
-            }
-          },
-          "1479768269224-4": {
-            "type": "logo_image",
-            "settings": {
-              "image": "",
-              "link": ""
-            }
-          },
-          "1479768269224-5": {
-            "type": "logo_image",
-            "settings": {
-              "image": "",
-              "link": ""
-            }
-          },
-          "1479768269224-6": {
-            "type": "logo_image",
-            "settings": {
-              "image": "",
-              "link": ""
-            }
-          },
-          "1479768269224-7": {
-            "type": "logo_image",
-            "settings": {
-              "image": "",
-              "link": ""
-            }
-          },
-          "1479768269224-8": {
-            "type": "logo_image",
-            "settings": {
-              "image": "",
-              "link": ""
-            }
-          },
-          "1479768269224-9": {
-            "type": "logo_image",
-            "settings": {
-              "image": "",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "1479768269224-0",
-          "1479768269224-1",
-          "1479768269224-2",
-          "1479768269224-3",
-          "1479768269224-4",
-          "1479768269224-5",
-          "1479768269224-6",
-          "1479768269224-7",
-          "1479768269224-8",
-          "1479768269224-9"
-        ],
-        "settings": {
-          "step": "2",
-          "module_autoplay": false,
-          "delay_time": "7000",
-          "custombgcolor": false,
-          "background_color": "#f5f5f5",
-          "customopacity": false,
-          "base_opacity": "0.3",
-          "active_opacity": "1",
-          "custombuttonscolor": false,
-          "arrow_base_color": "#333333",
-          "arrow_active_color": "#333333",
-          "bg_base_color": "#f5f5f5",
-          "bg_active_color": "#f5f5f5"
-        }
-      },
       "1479768929673": {
         "type": "sliders-group",
         "blocks": {
@@ -1113,8 +929,8 @@
           "1479769684172-0": {
             "type": "banner_item",
             "settings": {
-              "image": "",
-              "banner_link": "",
+              "image": "shopify:\/\/shop_images\/2017-10-21_0608.png",
+              "banner_link": "shopify:\/\/collections\/hats-caps-1",
               "show_item_button": "no",
               "title1": "Hats",
               "size_title1": "size3",
@@ -1131,15 +947,15 @@
           "1479769684172-1": {
             "type": "banner_item",
             "settings": {
-              "image": "",
-              "banner_link": "",
+              "image": "shopify:\/\/shop_images\/HTB15I5GNVXXXXapXXXXq6xXFXXXD.jpg",
+              "banner_link": "shopify:\/\/collections\/jewelry",
               "show_item_button": "yes",
               "title1": "15% OFF",
               "size_title1": "size3",
               "title2": "",
               "size_title2": "text",
               "title3": "on brand-new models",
-              "size_title3": "text size1",
+              "size_title3": "text size2 margin-1_4em",
               "use_custom_color": "no",
               "color_title1": "#ffffff",
               "color_title2": "#ffffff",
@@ -1183,7 +999,7 @@
         "settings": {
           "center_title": true,
           "title": "FEATURED PRODUCTS",
-          "collection": "",
+          "collection": "featured-products",
           "products_in_row": "3",
           "limit": "8",
           "show_lookbook": true,
@@ -1198,8 +1014,8 @@
           "1479771757508-0": {
             "type": "featured_collection",
             "settings": {
-              "collection": "",
-              "usecollectionimage": false,
+              "collection": "jackets-coats",
+              "usecollectionimage": true,
               "image": "",
               "custom_name": "",
               "show_item_button": "yes",
@@ -1210,8 +1026,8 @@
           "1479771757508-1": {
             "type": "featured_collection",
             "settings": {
-              "collection": "",
-              "usecollectionimage": false,
+              "collection": "scarves-wraps",
+              "usecollectionimage": true,
               "image": "",
               "custom_name": "",
               "show_item_button": "yes",
@@ -1222,8 +1038,44 @@
           "1479771757508-2": {
             "type": "featured_collection",
             "settings": {
-              "collection": "",
-              "usecollectionimage": false,
+              "collection": "hats-caps-1",
+              "usecollectionimage": true,
+              "image": "",
+              "custom_name": "",
+              "show_item_button": "yes",
+              "use_custom_color": "no",
+              "color_title": "#ffffff"
+            }
+          },
+          "1508540344364": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "jewelry",
+              "usecollectionimage": true,
+              "image": "",
+              "custom_name": "",
+              "show_item_button": "yes",
+              "use_custom_color": "no",
+              "color_title": "#ffffff"
+            }
+          },
+          "1508540418808": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "rings",
+              "usecollectionimage": true,
+              "image": "",
+              "custom_name": "",
+              "show_item_button": "yes",
+              "use_custom_color": "no",
+              "color_title": "#ffffff"
+            }
+          },
+          "1508540443347": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "earrings",
+              "usecollectionimage": true,
               "image": "",
               "custom_name": "",
               "show_item_button": "yes",
@@ -1235,17 +1087,20 @@
         "block_order": [
           "1479771757508-0",
           "1479771757508-1",
-          "1479771757508-2"
+          "1479771757508-2",
+          "1508540344364",
+          "1508540418808",
+          "1508540443347"
         ],
         "settings": {
           "items": "3",
           "step": "1",
           "show_button": true,
           "button_title": "Shop now!",
-          "hide_button": false,
+          "hide_button": true,
           "base_color_title": "#ffffff",
-          "module_autoplay": false,
-          "delay_time": "7000"
+          "module_autoplay": true,
+          "delay_time": "5000"
         }
       },
       "1479772071311": {
@@ -1254,12 +1109,12 @@
           "1479772071311-0": {
             "type": "slider_list",
             "settings": {
-              "image": "",
-              "banner_link": "",
+              "image": "shopify:\/\/shop_images\/hats_scraves.jpg",
+              "banner_link": "shopify:\/\/collections\/scarves-wraps",
               "position": "center",
               "show_video": "no",
               "video_url": "\/\/cdn.shopify.com\/s\/files\/1\/1236\/4838\/files\/explore.mp4?14925391354568980494",
-              "show_infoblock": "yes",
+              "show_infoblock": "no",
               "show_item_button": "yes",
               "text_design": "type1",
               "infoposition": "value",
@@ -1284,12 +1139,12 @@
           "1479772071311-1": {
             "type": "slider_list",
             "settings": {
-              "image": "",
-              "banner_link": "",
+              "image": "shopify:\/\/shop_images\/hats.jpg",
+              "banner_link": "shopify:\/\/collections\/hats-caps-1",
               "position": "center",
               "show_video": "no",
               "video_url": "\/\/cdn.shopify.com\/s\/files\/1\/1236\/4838\/files\/explore.mp4?14925391354568980494",
-              "show_infoblock": "yes",
+              "show_infoblock": "no",
               "show_item_button": "yes",
               "text_design": "type2",
               "infoposition": "right",
@@ -1389,11 +1244,7 @@
       "1479771757508",
       "1479770924814",
       "1479769684172",
-      "1479768929673",
-      "1479767951397",
-      "1479768233251",
-      "1479768269224",
-      "1479766932162"
+      "1479768929673"
     ]
   },
   "presets": {}

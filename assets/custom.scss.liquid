@@ -731,8 +731,17 @@ header .mainMenu .navbar-nav > li > a {
   color: #ffffff;
 }
 
+.subscribe-box .btn {
+}
+
 // 4.2 Social Sharing
 .social-sharing {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(space-between);
+  @include flex-wrap(space-between);
+  flex: 1;
+  
   .icon {
     width: 24px;
     height: 24px;
@@ -771,5 +780,23 @@ header .mainMenu .navbar-nav > li > a {
 .product-link-wrapper {
   @include flexbox();
   @include align-items(center);
+  @include justify-content(space-between);
   @include flex-wrap(space-between);
+
+  .product-link {
+    flex: 1;
+  }
+}
+
+.modal-bg-image {
+  height: 100%;
+
+  img {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+.modal-newsletter .modal-title,
+.modal-newsletter p {
+  color: #fff;
 }

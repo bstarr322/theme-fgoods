@@ -108,3 +108,12 @@ function init() {
 
   window.moneyFormat = {{ shop.money_format | json }};
 </script>
+
+<!-- Snapppt Conversion Code -->
+<script>
+  window.snapppt_order_number = '{{ order_number }}';
+  window.snapppt_order_total = '{{ total_price }}';
+  window.snapppt_order_currency = '{{ shop.currency }}';
+  window.snapppt_account = "100864f1-1cf6-4e4d-a8f9-912514e88891";
+</script>
+<script src="//snapppt.com/conversion-tracker.js" defer></script>

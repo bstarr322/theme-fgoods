@@ -22,6 +22,7 @@
         {% if settings.showfooternewsletter %}<div class="subscribe-box">
           {% if settings.mailchimp_form_action != "" %}
           <h3 class="text-left  title-under">{{ "newsletter.general.title" | t }}</h3>
+          <label for="NewsletterEmail" class="site-footer__newsletter-label" style="color: #fff;">Sign up for the latest news, offers and styles</label>
           <div class="top-newsletter">
             <form action="{{ settings.mailchimp_form_action }}" method="post" name="mc-embedded-subscribe-form" target="_blank" class="form-inline">
               <div class="subscribe-form__element clearfix">
@@ -86,6 +87,7 @@
           <div class="mobile-collapse">
             {% if settings.mailchimp_form_action != "" %}
             <h3 class="text-left  title-under  mobile-collapse__title">{{ "newsletter.general.title" | t }}</h3>
+            <label for="NewsletterEmail" class="site-footer__newsletter-label" style="color: #fff;">Sign up for the latest news, offers and styles</label>
             <div class="mobile-collapse__content">
               <form action="{{ settings.mailchimp_form_action }}" method="post" name="mc-embedded-subscribe-form" target="_blank" class="form-inline" style="display: flex;">
                 <input type="text" name="EMAIL" class="subscribe-form__input" placeholder="Your Email">
@@ -113,5 +115,5 @@
   </div>
   <!-- /footer-copyright -->  
 </footer>
-<a href="#" class="btn btn--ys btn--full visible-xs" id="backToTop">Back to top <span class="icon icon-expand_less"></span></a>
+<a href="#" class="btn btn--ys btn--full visible-xs" id="backToTop"><span class="icon icon-expand_less"></span></a>
 <!-- END FOOTER section -->

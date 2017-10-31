@@ -14,32 +14,35 @@
 {% endif %}
 
 <div class="social-sharing" data-permalink="{{ permalinkURL }}">
-  <a target="_blank" href="//www.facebook.com/sharer.php?u={{ permalinkURL }}" class="social-sharing__link share-facebook">
-    {% include 'icon-facebook' %}
-    <span class="share-title hidden">{{ 'general.social.share_on_facebook' | t }}</span>
-  </a>
-
-  <a target="_blank" href="//twitter.com/share?text={{ shareTitle }}&amp;url={{ permalinkURL }}" class="social-sharing__link share-twitter">
-    {% include 'icon-twitter' %}
-    <span class="share-title hidden">{{ 'general.social.share_on_twitter' | t }}</span>
-  </a>
-
-{% if template contains 'product' %}
-
-    <a target="_blank" href="//pinterest.com/pin/create/button/?url={{ permalinkURL }}&amp;media={{ product.featured_image | product_img_url: '1024x1024' }}&amp;description={{ shareTitle }}" class="social-sharing__link share-pinterest">
-      {% include 'icon-pinterest' %}
-      <span class="share-title hidden">{{ 'general.social.share_on_pinterest' | t }}</span>
+  <div>Share</div>
+  <div>
+    <a target="_blank" href="//www.facebook.com/sharer.php?u={{ permalinkURL }}" class="social-sharing__link share-facebook">
+      {% include 'icon-facebook' %}
+      <span class="share-title hidden">{{ 'general.social.share_on_facebook' | t }}</span>
     </a>
 
-    <a target="_blank" href="//fancy.com/fancyit?ItemURL={{ permalinkURL }}&amp;Title={{ shareTitle }}&amp;Category=Other&amp;ImageURL={{ product.featured_image | product_img_url: '1024x1024' }}" class="social-sharing__link share-fancy">
-      {% include 'icon-fancy' %}
-      <span class="share-title hidden">{{ 'general.social.share_on_fancy' | t }}</span>
+    <a target="_blank" href="//twitter.com/share?text={{ shareTitle }}&amp;url={{ permalinkURL }}" class="social-sharing__link share-twitter">
+      {% include 'icon-twitter' %}
+      <span class="share-title hidden">{{ 'general.social.share_on_twitter' | t }}</span>
     </a>
 
-{% endif %}
+  {% if template contains 'product' %}
 
-  <a target="_blank" href="//plus.google.com/share?url={{ permalinkURL }}" class="social-sharing__link share-google">
-    {% include 'icon-google-plus' %}
-    <span class="share-title hidden">+1</span>
-  </a>
+      <a target="_blank" href="//pinterest.com/pin/create/button/?url={{ permalinkURL }}&amp;media={{ product.featured_image | product_img_url: '1024x1024' }}&amp;description={{ shareTitle }}" class="social-sharing__link share-pinterest">
+        {% include 'icon-pinterest' %}
+        <span class="share-title hidden">{{ 'general.social.share_on_pinterest' | t }}</span>
+      </a>
+
+      <a target="_blank" href="//fancy.com/fancyit?ItemURL={{ permalinkURL }}&amp;Title={{ shareTitle }}&amp;Category=Other&amp;ImageURL={{ product.featured_image | product_img_url: '1024x1024' }}" class="social-sharing__link share-fancy">
+        {% include 'icon-fancy' %}
+        <span class="share-title hidden">{{ 'general.social.share_on_fancy' | t }}</span>
+      </a>
+
+  {% endif %}
+
+    <a target="_blank" href="//plus.google.com/share?url={{ permalinkURL }}" class="social-sharing__link share-google">
+      {% include 'icon-google-plus' %}
+      <span class="share-title hidden">+1</span>
+    </a>
+  </div>
 </div>

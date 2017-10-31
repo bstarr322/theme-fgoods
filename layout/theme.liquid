@@ -161,6 +161,12 @@
       {{ content_for_layout }}
     </div>
 
+    {% unless template contains 'page.shop-our-instagram' %}
+    <!-- Instagram Shop Feeds -->
+    <a href="/pages/shop-our-instagram"><h1 class="text-center">Shop our Instagram</h1></a>
+    <script src='https://snapppt.com/widgets/widget_loader/100864f1-1cf6-4e4d-a8f9-912514e88891/carousel.js' defer class='snapppt-widget'></script>
+    {% endunless %}
+
   	{% if template == "index" and settings.transparent_footer %}{% include "footer-fixed" %}
   	{% else %}{% include settings.footer_design %}
   	{% endif %}
