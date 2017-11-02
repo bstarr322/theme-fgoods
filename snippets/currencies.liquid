@@ -1,5 +1,10 @@
   {{ "//cdn.shopify.com/s/javascripts/currencies.js" | script_tag }}
+
+{% comment %}
+  This will be included in vendors.js.liquid
+
   {{ "jquery.currencies.min.js" | asset_url | script_tag }}
+{% endcomment %}
 
   <script>
 
